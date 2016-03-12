@@ -7,7 +7,7 @@ p {
 	font-weight:bold;
 	background-color:red;	
 	color:white;
-	font: sans-serif;
+        font-family: Helvetica, Arial, sans-serif;
 	
 	}
 svg { stroke: gray;
@@ -41,7 +41,7 @@ var dataset = [ 5, 10, 15, 20, 25 ];
     .append("p")
     .text(function(d) { 
     			return "I can count up to " + d;
-			});
+			})
 			.style("color", function(d) {
     				if (d > 15) {   //Threshold of 15
         				return "red";
