@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <style type="text/css">
+           div.bar {
+    display: inline-block;
+    width: 20px;
+    height: 75px;   /* We'll override height later */
+    background-color: teal;
+}
+        </style>
+        <meta charset="utf-8">
+        <title>Week6 practice</title>
+        <script type="text/javascript" src="D3/d3.js"></script>
+    </head>
+    <body>
+    	
+    	
+        <script type="text/javascript">
+            
+			var dataset = [ 5, 10, 15, 20, 25 ];
+
+d3.select("body").selectAll("div")
+    .data(dataset)
+    .enter()
+    .append("div")
+    .attr("class", "bar");
+			
+        </script>
+	
+    </body>
+</html>
